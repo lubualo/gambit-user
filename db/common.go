@@ -34,6 +34,7 @@ func DbConnect() error {
 	}
 
 	fmt.Println("Connection to DB successful")
+	return nil
 }
 
 func ConnStr(json models.SecretRDSJson) string {
