@@ -45,6 +45,8 @@ func LambdaExec(ctx context.Context, event events.CognitoEventUserPoolsPostConfi
 		return event, err
 	}
 
+
+	err = db.SignUp(data)
 	return event, err
 }
 
