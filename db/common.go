@@ -44,7 +44,7 @@ func ConnStr(json models.SecretRDSJson) string {
 	dbEndpoint = json.Host
 	dbName = "gambit"
 	dsn := fmt.Sprintf(
-		"%s:%s@tcp(%d)/%s?allowCleartextPasswords=true",
+		"%s:%s@tcp(%s)/%s?allowCleartextPasswords=true",
 		dbUser,
 		authToken,
 		dbEndpoint,
